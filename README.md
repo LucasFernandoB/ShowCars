@@ -5,4 +5,6 @@
 
  As linguagens e tecnologias utilizadas foram HTML, JavaScript, Css. Por ter sido o primeiro contato com o desenvolvimento web, acabou sendo um site estático, focado em front-end, sem uso de banco de dados.
 
+ Assim houve uma simulação de salvar os dados e resgatá-los através de arquivos txt.
+
 Para visualizá-lo, basta baixar a pasta compactada, e abrir no navegador de sua prefência, pois não possui back-end.

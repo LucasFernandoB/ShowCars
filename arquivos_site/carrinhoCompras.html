@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Projeto da UFU</title>
+  <link rel="stylesheet" href="css/normalize.css"/>
+  <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="css/estilo.css"/>
+  <script type="text/javascript" src="java/teste.js"></script>
+</head>
+<body bgcolor="#151515">
+  <div class="header">
+     <div class="linha">
+        <header>
+          <div class="coluna col4">
+             <img src="img/logo.png" alt="">
+          </div>
+          <div class="coluna col8">
+            <nav>
+              <ul class="menu inline sem-marcador">
+                  <li><a href="principal.html">HOME</a></li>
+                  <li><a href="cadastro.html">CADASTRO</a></li>
+                  <li><a href="servicos.html">SERVIÇOS</a></li>
+                  <li><a href="contato.html">CONTATO</a></li>
+                  <a href="carrinhoCompras.html"><img id="foto" src="img/comp.png" alt=""></a>
+                              
+              </ul>
+            </nav>
+          </div>
+        </header>   
+     </div>
+  </div><br><br><br><br>
+
+  <div class="linha" id="formataQuadradoCarrinho">
+    <section><br><br>
+         <div class="coluna col4 sidebar"><br>
+          <div id="tituloCatalogo">
+            <i>CARRO ESCOLHIDO: </i>
+          </div>
+          <div id="fotoCarrinho" >
+             <center> 
+              <img id="fotoInterrogacao" src="img/desconhecido.jpg" alt="" >
+             </center>
+          </div>
+          <div>
+             <center id="textoCarrinhovazio"> Carrinho de compras vazio</center><br>
+          </div>
+        </div>
+        <div class="coluna col7 sidebar"> <center>
+          <div id="tituloCatalogo">
+           <img src="img/carri.webp" alt="" style="max-width:400px;max-height:400px;width: auto;height: auto; ">
+          </div><br>
+          <div>
+           
+    
+              
+               <table border="3" ID="lista">
+                  <tr>
+                     <td>&nbsp;&nbsp;&nbsp;CARACTERISTICAS&nbsp;&nbsp;&nbsp;</td>
+                     <td>&nbsp;&nbsp;TIPO DISPONIVEL NA LOJA&nbsp;&nbsp; </td>
+                  </tr>
+                  <tr>
+                     <td>&nbsp;&nbsp;Preço</td>
+                     <td id="setarPreco">&nbsp;&nbsp;&nbsp;&nbsp; - </td>
+                 </tr>
+                 <tr>
+                     <td>&nbsp;&nbsp;ANO</td>
+                     <td id="setarAno">&nbsp;&nbsp;&nbsp;&nbsp; - </td>
+                 </tr>
+                 <tr>
+                    <td>&nbsp;&nbsp;Modelo</td>
+                    <td id="setarModelo">&nbsp;&nbsp;&nbsp;&nbsp; -</td>
+                </tr>
+              </table><br>
+             
+          <div id="divTeste" style="color: blue;font-size: 20px;"></div>
+           
+          </div><br>
+              <INPUT TYPE="file" ID="fileToLoad"></INPUT><br><br>
+              <BUTTON ONCLICK="loadFileAsText()"  style="width: 400px;">Carregar o arquivo selecionado</BUTTON>
+               <a href="cadastro.html"><input type="submit" value="FINALIZAR PEDIDO" onclick="finalizar()" name="entrar" style="width: 400px;" class="botao"></a>
+          
+         </center></div>
+      </section>
+    </div>
+
+
+
+<br><br><br><br><br><br>
+
+
+  <div class="conteudo-extra">
+      <div class="linha">
+        <div class="coluna col4">
+               <section>
+                  Anuncie conosco : (34)3842-2465
+               </section>
+            </div>
+            <div class="coluna col4">
+               <section>
+                  CNPJ: 22.334.579/0001-61
+               </section>
+            </div>
+            <div class="coluna col4">
+               <section>
+                  Ultima atualização:  25/04/2019
+               </section>
+            </div>
+      </div>     
+   </div> 
+   <div class="footer">
+      <div class="linha">
+        <footer>
+          <div class="coluna col12">
+            <span>&copy; 2019- Sistemas de Informação. ALL RIGHTS ARE RESERVED.</span>
+          </div>
+        </footer>
+        
+      </div>
+   </div>
+</body>
+</html>

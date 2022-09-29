@@ -1,0 +1,946 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Projeto da UFU</title>
+
+	<link rel="stylesheet" href="css/normalize.css"/>
+  <link rel="stylesheet" href="css/estilo.css"/>
+  <link rel="stylesheet" href="css/carroselProfessor.css"/>
+  <link rel="stylesheet" href="css/carrosel.css"/>
+	<link href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700" rel="stylesheet" type="text/css"/>
+
+
+
+  <script type="text/javascript" src="java/script.js"></script>
+   <script type="text/javascript" src="java/teste.js"></script>
+  <script type="text/javascript" src="java/jquery.js"></script>
+  <script type="text/javascript" src="java/jquery1.js"></script>
+  <script type="text/javascript" src="java/bootstrap.min.js"></script>
+  <script type="text/javascript" src="java/flickity.js"></script>
+  <script type="text/javascript" src="java/popper.min.js"></script>
+  <script type="text/javascript" src="java/popper1.min.js"></script>
+  <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>-->
+  <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <script type="text/javascript">
+    var contador=0;
+  </script>
+
+  <style type="text/css">
+    .preload{
+    position: fixed;
+    z-index:99999;
+    top:0; left:0;
+    width:100%; height:100%;
+    opacity:1;
+    background-color:#fff;
+    background-image:url('5.gif');
+    background-position:50% 50%;
+    background-repeat:no-repeat;
+}
+  </style>
+
+    <script>
+        $(document).ready(function () {
+            $('.main-carousel-teste').flickity({
+                cellAlign: 'left',
+                autoPlay: 3500,
+                wrapAround: true
+            });
+        })
+    </script>
+    <script type="text/javascript">
+                  window.onload = function(){
+                      var div = document.getElementById('preload');
+                      preload(div, 80);
+                  };
+                  function preload(el, interval){
+                      var op = 1;
+                      var timer = setInterval(function () {
+                          if (op <= 0.4){
+                              clearInterval(timer);
+                              el.style.display = 'none';
+                              el.className = '';
+                          }
+                          el.style.opacity = op;
+                          op -= op * 0.1;
+                      }, interval);
+                  }
+              
+              </script>
+  <script type="text/javascript">
+    
+  </script> 
+</head>
+
+<body bgcolor ="#151515 " >
+   <div id="preload" class="preload"></div>
+	<div class="header">
+	   <div class="linha">
+		   	<header>
+		   		<div class="coluna col4">
+		   		  <a href="dadosCadastrados.html"> <img src="img/logo.png" alt=""></a>
+		   		</div>
+		   		<div class="coluna col8">
+		   			<nav>
+		   				<ul class="menu inline sem-marcador">
+		   					<li><a href="index1.html">HOME</a></li>
+		   			      <li><a href="cadastro.html">CADASTRO</a></li>
+		   					<li><a href="servicos.html">SERVIÇOS</a></li>
+                        <li><a href="contato.html">CONTATO</a></li>
+		   					<a href="carrinhoCompras.html"><img id="foto" src="img/comp.png" alt=""></a>
+                <div id="setaQtd">0</div>       
+		   				</ul>
+		   			</nav>
+		   		</div>
+		   	</header>  	
+	   </div>
+   </div>
+
+  <div class="linha" >
+    <ul class="sem-marcador sem-padding"/> 
+        <div class="coluna col6">
+          <div class="letra">
+          Navegue pelo nosso aplicativo: 
+        </div>
+        </div>
+            <div class="coluna col3">
+               <a href=""> <img src="https://img2.icarros.com/principal/imagens/mobile/botao_appstore.png" class="cta-app__banners--img imglazy" style=""></a>
+            </div>
+            <div class="coluna col3">
+              <a href=""> <img src="https://img1.icarros.com/principal/imagens/mobile/botao_googleplay.png" class="cta-app__banners--img imglazy" style=""></a>
+            </div>
+      </ul>
+    </div>
+
+
+   <div class="linha">
+      <div class="coluna col12 sidebar">
+           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <img src="img/propaganda.jpg" alt="">
+                     </div>
+                     <div class="carousel-item">
+                        <img src="img/audip.jpg" alt="">
+                      </div>
+                     <div class="carousel-item">
+                        <img src="img/nissan.jpg" alt="">
+                     </div>
+                      <div class="carousel-item">
+                        <img src="img/hb20.jpg" alt="">
+                      </div>
+               </div>
+            </div>
+      </div>
+   </div>
+
+
+
+   <div class="linha"><br>
+      <div class="letra" > Conheça nossas ofertas AUDI disponíveis na loja fisica: </div><br><br>
+       	<section>
+         <div class="coluna col3 sidebar">
+           <div class="dcontexto">
+            <div id="formatarQuadrado">
+               <img class="nm-model-band-stripe-img-active" src="https://mediaservice.audi.com/media/live/50900/fly1400x601n1/8vf/2019.png?wid=291" alt="">
+               <img class="nm-model-band-stripe-img" src="https://mediaservice.audi.com/media/live/50900/fly1400x601n8/8vf/2019.png?wid=291" alt=""><center>
+                  <h4 id="h4letra">AUDI A3</h4>
+                  <div id="preco2">
+                     A partir de R$125.990,00
+                  </div><br>
+              <input type="submit" value="RESERVAR" onclick="ajuda(1)" class="botao"></center><br>         
+            </div>
+            <span>
+              <div id="formatarQuadrado">
+               <img class="nm-model-band-stripe-img-active" src="https://mediaservice.audi.com/media/live/50900/fly1400x601n1/8w2/2019.png?wid=291" alt="">
+               <h4>&nbsp;&nbsp;MOTOR: 2.0 </h4>
+               <h4>&nbsp;&nbsp;COR: PRATA </h4>
+               <h4>&nbsp;&nbsp;ANO: 2019</h4>
+               <h4>&nbsp;&nbsp;POTENCIA: 220 cv</h4>
+               <h4>&nbsp;&nbsp;PORTA MALAS: 425 l </h4>
+               <h4>&nbsp;&nbsp;GARANTIA: 2 anos</h4>
+               <center>
+               <input type="submit" value="RESERVAR" onclick="ajuda(1)" class="botao"></center><br>         
+              </div>
+            </span>
+         </div>
+       </div>
+   		<div class="coluna col3 sidebar">
+        <div class="dcontexto">
+   			<div id="formatarQuadrado">
+               <img class="nm-model-band-stripe-img-active" src="https://mediaservice.audi.com/media/live/50900/fly1400x601n1/8w2/2019.png?wid=291" alt="">
+               <img class="nm-model-band-stripe-img" src="https://mediaservice.audi.com/media/live/50900/fly1400x601n8/8w2/2019.png?wid=291" alt=""><center>
+               <h4 id="h4letra">AUDI A4</h4>
+                  <div id="preco1">
+
+                  </div>
+                  <div id="preco2">
+                    A partir de R$173.990,00
+                  </div><br>
+               <input type="submit" value="RESERVAR" onclick="ajuda(2)" class="botao"><br><br>
+               </center>            
+            </div>
+             <span>
+              <div id="formatarQuadrado">
+               <img class="nm-model-band-stripe-img-active" src="https://mediaservice.audi.com/media/live/50900/fly1400x601n1/8w2/2019.png?wid=291" alt="">
+               <h4>&nbsp;&nbsp;MOTOR: 2.0 </h4>
+               <h4>&nbsp;&nbsp;COR: PRATA </h4>
+               <h4>&nbsp;&nbsp;ANO: 2019</h4>
+               <h4>&nbsp;&nbsp;POTENCIA: 252 cv</h4>
+               <h4>&nbsp;&nbsp;CÂMBIO: AUTOMÁTICO </h4>
+               <h4>&nbsp;&nbsp;GARANTIA: 3 anos</h4>
+               <center>
+               <input type="submit" value="RESERVAR" onclick="ajuda(2)" class="botao"></center><br>         
+              </div>
+            </span>
+          </div>
+   		</div>
+         <div class="coluna col3 sidebar">
+          <div class="dcontexto">
+            <div id="formatarQuadrado">
+               <img class="nm-model-band-stripe-img-active" src="https://mediaservice.audi.com/media/live/50900/fly1400x601n1/f5a/2019.png?wid=291" alt="">
+               <img class="nm-model-band-stripe-img" src="https://mediaservice.audi.com/media/live/50900/fly1400x601n8/f5a/2019.png?wid=291" alt=""><center>
+               <h4 id="h4letra">AUDI A5</h4>
+                  <div id="preco1">
+                    
+                  </div>
+                  <div id="preco2">
+                     A partir de R$199.990,00
+                  </div><br>
+               <input type="submit" value="RESERVAR" onclick="ajuda(3)" class="botao"><br><br>
+               </center>            
+            </div>
+             <span>
+              <div id="formatarQuadrado">
+               <img class="nm-model-band-stripe-img-active" src="https://mediaservice.audi.com/media/live/50900/fly1400x601n1/8w2/2019.png?wid=291" alt="">
+               <h4>&nbsp;&nbsp;MOTOR: 2.0 </h4>
+               <h4>&nbsp;&nbsp;COR: PRATA </h4>
+               <h4>&nbsp;&nbsp;ANO: 2019</h4>
+               <h4>&nbsp;&nbsp;POTENCIA: 252 cv</h4>
+               <h4>&nbsp;&nbsp;CÂMBIO: AUTOMÁTICO </h4>
+               <h4>&nbsp;&nbsp;GARANTIA: 3 anos</h4>
+               <center>
+               <input type="submit" value="RESERVAR" onclick="ajuda(3)" class="botao"></center><br>         
+              </div>
+            </span>
+          </div>
+         </div>
+         <div class="coluna col3 sidebar">
+          <div class="dcontexto">
+            <div id="formatarQuadrado">
+               <img class="nm-model-band-stripe-img-active" src="https://mediaservice.audi.com/media/live/50900/fly1400x601n1/4gc/2018.png?wid=291" alt="">
+               <img class="nm-model-band-stripe-img" src="https://mediaservice.audi.com/media/live/50900/fly1400x601n8/4gc/2018.png?wid=291" alt=""><center>
+               <h4 id="h4letra">AUDI A6</h4>
+                  <div id="preco1">
+                     
+                  </div>
+                  <div id="preco2">
+                    A partir de R$306.990,00
+                  </div><br>
+             <input type="submit" value="RESERVAR" onclick="ajuda(4)" class="botao"><br><br>
+               </center>            
+            </div>
+             <span>
+              <div id="formatarQuadrado">
+               <img class="nm-model-band-stripe-img-active" src="https://mediaservice.audi.com/media/live/50900/fly1400x601n1/8w2/2019.png?wid=291" alt="">
+               <h4>&nbsp;&nbsp;MOTOR: 2.0 </h4>
+               <h4>&nbsp;&nbsp;COR: PRATA </h4>
+               <h4>&nbsp;&nbsp;ANO: 2019</h4>
+               <h4>&nbsp;&nbsp;POTENCIA: 252 cv</h4>
+               <h4>&nbsp;&nbsp;GARANTIA: 3 anos</h4>
+               <h4>&nbsp;&nbsp;VELOCIDADE: 250 km/h</h4>
+               <center>
+               <input type="submit" value="RESERVAR" onclick="ajuda(4)" class="botao"></center><br>         
+              </div>
+            </span>
+          </div>
+         </div>
+   	</section>
+   </div><br><br><br>
+
+
+   <main class="container"bgcolor ="black"> 
+     <div class="linha">
+       <div class="fa-blink">
+          <div class="letra"> OFERTAS IMPERDÍVEIS : </div><br><br>
+       </div>
+        <section>
+      <div id="demo" class="carousel slide" data-ride="carousel">
+        <!-- Indicadores -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <!-- Slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+
+         <div class="coluna col3 sidebar">
+            <div id="formatarQuadrado"><center><br>
+                <img src="img/tcross.png" style="width:200px;height:100px;" alt=""><br>
+                   <h4> T CROSS</h4>
+                   <div id="preco1">
+                     <del> R$ 47.999,00</del>
+                  </div><br>
+                  <div id="preco2">
+                     R$ 45.240,00
+                  </div><br>
+              <button type="button" onclick=" location.href='cadastro.html'"  class="botao" >RESERVAR</button><br><br> 
+               </center>            
+            </div>
+         </div>
+         <div class="coluna col3 sidebar">
+            <div id="formatarQuadrado"><center>
+                <img src="img/onix.png" alt="" style="width:165px;">
+                   <h4> ONIX </h4>
+                   <div id="preco1">
+                     <del> R$ 47.999,00</del>
+                  </div><br>
+                  <div id="preco2">
+                     R$ 45.240,00
+                  </div><br>
+              <button type="button" onclick=" location.href='cadastro.html'"  class="botao" >RESERVAR</button><br><br> 
+               </center>            
+            </div>
+         </div>
+         <div class="coluna col3 sidebar">
+            <div id="formatarQuadrado"><center><br>
+                <img src="img/amarok.png" style="width:170px;height:100px;" alt=""><br>
+                   <h4>AMAROCK</h4>
+                   <div id="preco1">
+                     <del> R$ 205.990,00</del>
+                  </div><br>
+                  <div id="preco2">
+                     R$ 45.240,00
+                  </div><br>
+              <button type="button" onclick=" location.href='cadastro.html'"  class="botao" >RESERVAR</button><br><br> 
+               </center>            
+            </div>
+         </div>
+         <div class="coluna col3 sidebar">
+            <div id="formatarQuadrado"><center><br>
+                <img src="img/saveiro.png" id="fotoImportados" alt=""><br>
+                   <h4>PALIO</h4>
+                   <div id="preco1">
+                     <del> R$ 47.999,00</del>
+                  </div><br>
+                  <div id="preco2">
+                     R$ 45.240,00
+                  </div><br>
+              <button type="button" onclick=" location.href='cadastro.html'"  class="botao" >RESERVAR</button><br><br> 
+               </center>            
+            </div>
+         </div>
+          </div>
+
+
+          <div class="carousel-item">
+         <div class="coluna col3 sidebar">
+            <div id="formatarQuadrado"><center>
+                <img src="img/logan.png" id="fotoCarros"  alt="">
+                   <h4>LOGAN </h4>
+                   <div id="preco1">
+                     <del> R$ 48.549,00</del>
+                  </div><br>
+                  <div id="preco2">
+                    R$ 48.150,00
+                  </div><br>
+               <button type="button" onclick=" location.href='cadastro.html'"  class="botao" >RESERVAR</button><br><br>  
+               </center>            
+            </div>
+         </div>
+         <div class="coluna col3 sidebar">
+            <div id="formatarQuadrado"><center>
+                <img src="img/hb20s.png" id="fotoCarros" alt="">
+                   <h4> HB20S</h4>
+                   <div id="preco1">
+                     <del> R$ 48.999,00</del>
+                  </div><br>
+                  <div id="preco2">
+                    R$ 48.150,00
+                  </div><br>
+               <button type="button" onclick=" location.href='cadastro.html'"  class="botao" >RESERVAR</button><br><br>  
+               </center>            
+            </div>
+         </div>
+         <div class="coluna col3 sidebar">
+            <div id="formatarQuadrado"><center>
+               <img src="img/fusion.png" id="fotoCarros"  alt="">
+                   <h4>FUSION</h4>
+                   <div id="preco1">
+                     <del> 144,900,00</del>
+                  </div><br>
+                  <div id="preco2">
+                    R$ 138.150,00
+                  </div><br>
+               <button type="button" onclick=" location.href='cadastro.html'"  class="botao" >RESERVAR</button><br><br>  
+               </center>            
+            </div>
+         </div>
+         <div class="coluna col3 sidebar">
+            <div id="formatarQuadrado"><center>
+               <img src="img/sentra.png" id="fotoCarros"  alt="">
+                   <h4> SENTRA</h4>
+                   <div id="preco1">
+                     <del> R$ R$ 82.900,00</del>
+                  </div><br>
+                  <div id="preco2">
+                    R$ 81.150,00
+                  </div><br>
+               <button type="button" onclick=" location.href='cadastro.html'"  class="botao" >RESERVAR</button><br><br>  
+               </center>            
+            </div>
+         </div>
+
+
+          </div>
+          <div class="carousel-item">
+            <div class="coluna col3 sidebar">
+            <div id="formatarQuadrado"><center><br>
+               <img src="img/city.png" style="width:170px;height:110px;" alt=""><br>
+                   <h4>CITY</h4>
+                   <div id="preco1">
+                     <del> R$ 120.560,00</del>
+                  </div><br>
+                  <div id="preco2">
+                    R$ 118.850,00
+                  </div><br>
+               <button type="button" onclick=" location.href='cadastro.html'"  class="botao" >RESERVAR</button><br><br> 
+               </center>            
+            </div>
+         </div>
+         <div class="coluna col3 sidebar">
+            <div id="formatarQuadrado"><center><br>
+               <img src="img/fit.png" id="FotoHonda" alt=""><br>
+                   <h4>FIT</h4>
+                   <div id="preco1">
+                     <del> R$ 120.560,00</del>
+                  </div><br>
+                  <div id="preco2">
+                    R$ 118.850,00
+                  </div><br>
+               <button type="button" onclick=" location.href='cadastro.html'"  class="botao" >RESERVAR</button><br><br> 
+               </center>            
+            </div>
+         </div>
+         <div class="coluna col3 sidebar">
+            <div id="formatarQuadrado"><center><br>
+               <img src="img/hrv.png" id="FotoHonda" alt="">
+                   <h4> HRV</h4>
+                   <div id="preco1">
+                     <del> R$ 120.560,00</del>
+                  </div><br>
+                  <div id="preco2">
+                    R$ 118.850,00
+                  </div><br>
+               <button type="button" onclick=" location.href='cadastro.html'"  class="botao" >RESERVAR</button><br><br> 
+               </center>            
+            </div>
+         </div>
+         <div class="coluna col3 sidebar">
+            <div id="formatarQuadrado"><center><br>
+               <img src="img/civicsi.png" alt="">
+                   <h4>CITY</h4>
+                   <div id="preco1">
+                     <del> R$ 120.560,00</del>
+                  </div><br>
+                  <div id="preco2">
+                    R$ 118.850,00
+                  </div><br>
+               <button type="button" onclick=" location.href='cadastro.html'"  class="botao" >RESERVAR</button><br><br> 
+               </center>            
+            </div>
+         </div>
+         
+          </div>
+        </div>
+        <!-- Controles anterior e prÃ³ximo -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <img src="img/ant.png" style="max-width:50px;max-height:50px;">
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+         <img src="img/prox.png" style="max-width:50px;max-height:50px;">
+        </a>
+      </div>
+    </section>
+  </div>
+    </main><br><br><br><br>
+
+    <div class="conteudo-extra">
+         <div class="linha">
+            <div class="coluna col5">
+               <img alt="Catálogo 0km iCarros" class="imglazy card-home__pic" src="https://img1.icarros.com/principal/v1/images/banner.png" style="" >
+            </div>
+            <div class="coluna col7" id="tituloCatalogo"><br>
+               <h2>Catálogo 0 km SHOWCARS</h2>
+               <div id="textoCatalogo">
+                  <i> Confira o 1º e mais completo catálogo de carros do Brasil Veja Fotos, Preços, Ficha Técnica e Vantagens. Compare e saiba tudo sobre o modelo desejado.</i>
+                </div>
+            </div>
+         </div>
+   </div><br><br><br><br>
+
+
+
+<div class="linha" >
+   <div class="fa-blink">
+      <div class="letra"> IMPORTADOS : </div><br><br>
+   </div>
+    <section>
+         <div class="coluna col3 sidebar">
+          <div class="dcontexto1">
+            <div id="formatarQuadrado"><center><br>
+                 <img id="fotoImportados" src="https://catalogo.webmotors.com.br/imagens/prod/347868/SUZUKI_VITARA_1.4_16V_TURBO_GASOLINA_4STYLE_ALLGRIP_AUTOMATICO_34786810315649583.png?s=fill&amp;w=236&amp;h=135&amp;q=70&amp;t=true" alt="SUZUKI VITARA 2020" title="SUZUKI VITARA 2020">
+                   <h4>SUZUKI VITARA</h4>
+                   <div id="preco1">
+                     <del> R$ 47.999,00</del>
+                  </div><br>
+                  <div id="preco2">
+                    R$ 126.990,00
+                  </div><br>
+               <button type="button" onclick=" location.href='cadastro.html'"  class="botao" >RESERVAR</button><br><br> 
+               </center>            
+            </div>
+            <span>
+              <div id="formatarQuadrado">
+               <img id="fotoImportados" src="https://catalogo.webmotors.com.br/imagens/prod/347868/SUZUKI_VITARA_1.4_16V_TURBO_GASOLINA_4STYLE_ALLGRIP_AUTOMATICO_34786810315649583.png?s=fill&amp;w=236&amp;h=135&amp;q=70&amp;t=true" alt="SUZUKI VITARA 2020" title="SUZUKI VITARA 2020">
+               <h4>&nbsp;&nbsp;MOTOR: 2.0 </h4>
+               <h4>&nbsp;&nbsp;COR: AMARELA </h4>
+               <h4>&nbsp;&nbsp;ANO: 2019</h4>
+               <h4>&nbsp;&nbsp;POTENCIA: 252 cv</h4>
+               <h4>&nbsp;&nbsp;CÂMBIO: AUTOMÁTICO </h4>
+               <h4>&nbsp;&nbsp;GARANTIA: 3 anos</h4>
+               <center>
+               <input type="submit" value="RESERVAR" onclick="ajuda()" class="botao"></center><br>         
+              </div>
+            </span>
+          </div>
+         </div>
+         <div class="coluna col3 sidebar">
+          <div class="dcontexto1">
+            <div id="formatarQuadrado"><center><br>
+               <img id="fotoImportados" src="https://catalogo.webmotors.com.br/imagens/prod/348027/PEUGEOT_2008_1.6_16V_THP_FLEX_GRIFFE_4P_AUTOMATICO_34802715302433380.png?s=fill&amp;w=236&amp;h=135&amp;q=70&amp;t=true" alt="PEUGEOT 2008 2020" title="PEUGEOT 2008 2020">
+                   <h4>PEGEOT 2008</h4>
+                   <div id="preco1">
+                     <del> R$ 120.560,00</del>
+                  </div><br>
+                  <div id="preco2">
+                   R$ 99.990,00
+                  </div><br>
+               <button type="button" onclick=" location.href='cadastro.html'"  class="botao" >RESERVAR</button><br><br> 
+               </center>            
+            </div>
+            <span>
+              <div id="formatarQuadrado">
+               <img id="fotoImportados" src="https://catalogo.webmotors.com.br/imagens/prod/348027/PEUGEOT_2008_1.6_16V_THP_FLEX_GRIFFE_4P_AUTOMATICO_34802715302433380.png?s=fill&amp;w=236&amp;h=135&amp;q=70&amp;t=true" alt="PEUGEOT 2008 2020" title="PEUGEOT 2008 2020">
+               <h4>&nbsp;&nbsp;MOTOR: 2.0 </h4>
+               <h4>&nbsp;&nbsp;COR: BRANCA </h4>
+               <h4>&nbsp;&nbsp;ANO: 2019</h4>
+               <h4>&nbsp;&nbsp;POTENCIA: 252 cv</h4>
+               <h4>&nbsp;&nbsp;CÂMBIO: AUTOMÁTICO </h4>
+               <h4>&nbsp;&nbsp;GARANTIA: 3 anos</h4>
+               <center>
+               <input type="submit" value="RESERVAR" onclick="ajuda()" class="botao"></center><br>         
+              </div>
+            </span>
+          </div>
+         </div>
+         <div class="coluna col3 sidebar">
+           <div class="dcontexto1">
+            <div id="formatarQuadrado"><center><br>
+                <img id="fotoImportados" src="https://catalogo.webmotors.com.br/imagens/prod/348030/JAGUAR_IPACE_90_KW_EV400_HSE_AWD_ELETRICO_34803016103753338.png?s=fill&amp;w=236&amp;h=135&amp;q=70&amp;t=true" alt="JAGUAR I-PACE 2019" title="JAGUAR I-PACE 2019">
+                   <h4>JAGUAR IPACE </h4>
+                   <div id="preco1">
+                     <del> R$ 503.999,00</del>
+                  </div><br>
+                  <div id="preco2">
+                    R$ 449.190,00
+                  </div><br>
+               <button type="button" onclick=" location.href='cadastro.html'"  class="botao" >RESERVAR</button><br><br> 
+               </center>            
+            </div>
+            <span>
+              <div id="formatarQuadrado">
+               <img id="fotoImportados" src="https://catalogo.webmotors.com.br/imagens/prod/348030/JAGUAR_IPACE_90_KW_EV400_HSE_AWD_ELETRICO_34803016103753338.png?s=fill&amp;w=236&amp;h=135&amp;q=70&amp;t=true" alt="JAGUAR I-PACE 2019" title="JAGUAR I-PACE 2019">
+               <h4>&nbsp;&nbsp;MOTOR: 2.0 </h4>
+               <h4>&nbsp;&nbsp;COR: VERMELHA </h4>
+               <h4>&nbsp;&nbsp;ANO: 2019</h4>
+               <h4>&nbsp;&nbsp;POTENCIA: 252 cv</h4>
+               <h4>&nbsp;&nbsp;CÂMBIO: AUTOMÁTICO </h4>
+               <h4>&nbsp;&nbsp;GARANTIA: 3 anos</h4>
+               <center>
+               <input type="submit" value="RESERVAR" onclick="ajuda()" class="botao"></center><br>         
+              </div>
+            </span>
+          </div>
+         </div>
+         <div class="coluna col3 sidebar">
+           <div class="dcontexto1">
+            <div id="formatarQuadrado"><center><br>
+                <img id="fotoImportados" src="https://catalogo.webmotors.com.br/imagens/prod/348025/HONDA_HRV_1.5_16V_TURBO_GASOLINA_TOURING_4P_AUTOMATICO_34802516502224979.png?s=fill&amp;w=236&amp;h=135&amp;q=70&amp;t=true" alt="HONDA HR-V 2020" title="HONDA HR-V 2020">
+                   <h4>HONDA HRV</h4>
+                   <div id="preco1">
+                     <del> R$145.000,00</del>
+                  </div><br>
+                  <div id="preco2">
+                   R$ 139.900,00
+                  </div><br>
+               <button type="button" onclick=" location.href='cadastro.html'"  class="botao" >RESERVAR</button><br><br> 
+               </center>            
+            </div>
+            <span>
+              <div id="formatarQuadrado">
+               <img id="fotoImportados" src="https://catalogo.webmotors.com.br/imagens/prod/348025/HONDA_HRV_1.5_16V_TURBO_GASOLINA_TOURING_4P_AUTOMATICO_34802516502224979.png?s=fill&amp;w=236&amp;h=135&amp;q=70&amp;t=true" alt="HONDA HR-V 2020" title="HONDA HR-V 2020">
+               <h4>&nbsp;&nbsp;MOTOR: 2.0 </h4>
+               <h4>&nbsp;&nbsp;COR: BRANCA </h4>
+               <h4>&nbsp;&nbsp;ANO: 2019</h4>
+               <h4>&nbsp;&nbsp;POTENCIA: 252 cv</h4>
+               <h4>&nbsp;&nbsp;CÂMBIO: AUTOMÁTICO </h4>
+               <h4>&nbsp;&nbsp;GARANTIA: 3 anos</h4>
+               <center>
+               <input type="submit" value="RESERVAR" onclick="ajuda()" class="botao"></center><br>         
+              </div>
+            </span>
+          </div>
+         </div>
+
+      </section>
+</div><br><br><br>
+
+
+
+  <div class="linha" >
+   <div class="fa-blink">
+      <div class="letra"> TAXA ZERO : </div><br><br>
+   </div>
+    <section>
+         <div class="coluna col3 sidebar">
+            <div id="formatarQuadrado"><center><br>
+                 <img src="img/argo.png" id="fotoImportados" alt="">
+                   <h4> FIAT ARGO</h4>
+                  <div id="preco2">
+                    R$ 47.990,00
+                  </div><br>
+  <table border="3">
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;CARAC&nbsp;&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;DETALHES&nbsp;&nbsp; </td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;Preço</td>
+      <td id="setarPreco">&nbsp;&nbsp;&nbsp;&nbsp; - </td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;ANO</td>
+      <td id="setarAno">&nbsp;&nbsp;&nbsp;&nbsp; - </td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;Modelo</td>
+      <td id="setarModelo">&nbsp;&nbsp;&nbsp;&nbsp; -</td>
+    </tr>
+    </table><br>
+               <input type="submit" value="RESERVAR" onclick="ajuda(5)" class="botao"></center><br>
+               </center>            
+            </div>
+         </div>
+         <div class="coluna col3 sidebar">
+            <div id="formatarQuadrado"><center><br>
+                 <img src="img/cronos.png" id="fotoImportados" alt="">
+                   <h4> FIAT CRONOS </h4>
+                  <div id="preco2">
+                    R$ 57.990,00
+                  </div><br>
+                   <table border="3">
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;CARAC&nbsp;&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;DETALHES&nbsp;&nbsp; </td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;Preço</td>
+      <td id="setarPreco">&nbsp;&nbsp;&nbsp;&nbsp; - </td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;ANO</td>
+      <td id="setarAno">&nbsp;&nbsp;&nbsp;&nbsp; - </td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;Modelo</td>
+      <td id="setarModelo">&nbsp;&nbsp;&nbsp;&nbsp; -</td>
+    </tr>
+    </table><br>
+               <input type="submit" value="RESERVAR" onclick="ajuda(6)" class="botao"></center><br>
+               </center>            
+            </div>
+         </div>
+         <div class="coluna col3 sidebar">
+            <div id="formatarQuadrado"><center><br>
+                 <img src="img/jetta.png" style="width:180px;height:100px;" alt=""><br>
+                   <h4> JETTA </h4>
+                  <div id="preco2">
+                    R$ 92.990,00
+                  </div><br>
+                   <table border="3">
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;CARAC&nbsp;&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;DETALHES&nbsp;&nbsp; </td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;Preço</td>
+      <td id="setarPreco">&nbsp;&nbsp;&nbsp;&nbsp; - </td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;ANO</td>
+      <td id="setarAno">&nbsp;&nbsp;&nbsp;&nbsp; - </td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;Modelo</td>
+      <td id="setarModelo">&nbsp;&nbsp;&nbsp;&nbsp; -</td>
+    </tr>
+    </table><br>
+               <input type="submit" value="RESERVAR" onclick="ajuda(7)" class="botao"></center><br>
+               </center>            
+            </div>
+         </div>
+         <div class="coluna col3 sidebar">
+            <div id="formatarQuadrado"><center><br>
+                   <img src="img/polo.png" id="fotoImportados" alt="">
+                   <h4> POLO </h4>
+                  <div id="preco2">
+                    R$ 48.390,00
+                  </div><br>
+                   <table border="3">
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;CARAC&nbsp;&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;DETALHES&nbsp;&nbsp; </td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;Preço</td>
+      <td id="setarPreco">&nbsp;&nbsp;&nbsp;&nbsp; - </td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;ANO</td>
+      <td id="setarAno">&nbsp;&nbsp;&nbsp;&nbsp; - </td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;Modelo</td>
+      <td id="setarModelo">&nbsp;&nbsp;&nbsp;&nbsp; -</td>
+    </tr>
+    </table><br>
+               <input type="submit" value="RESERVAR" onclick="ajuda(8)" class="botao"></center><br>
+               </center>            
+            </div>
+         </div>
+      </section>
+    </div>
+
+
+    <div class="linha" ><br>
+    <section>
+         <div class="coluna col3 sidebar">
+            <div id="formatarQuadrado"><center><br>
+                  <img src="img/ecoSport.png" id="fotoImportados" alt="">
+                   <h4> ECO SPORT </h4>
+                  <div id="preco2">
+                    R$ 85.990,00
+                  </div><br>
+                   <table border="3">
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;CARAC&nbsp;&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;DETALHES&nbsp;&nbsp; </td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;Preço</td>
+      <td id="setarPreco">&nbsp;&nbsp;&nbsp;&nbsp; - </td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;ANO</td>
+      <td id="setarAno">&nbsp;&nbsp;&nbsp;&nbsp; - </td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;Modelo</td>
+      <td id="setarModelo">&nbsp;&nbsp;&nbsp;&nbsp; -</td>
+    </tr>
+    </table><br>
+               <input type="submit" value="RESERVAR" onclick="ajuda(9)" class="botao"></center><br> 
+               </center>            
+            </div>
+         </div>
+         <div class="coluna col3 sidebar">
+            <div id="formatarQuadrado"><center><br>
+                 <img src="img/ranger.png" id="fotoImportados" alt="">
+                   <h4> RANGER </h4>
+                  <div id="preco2">
+                    R$ 150.990,00
+                  </div><br>
+                   <table border="3">
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;CARAC&nbsp;&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;DETALHES&nbsp;&nbsp; </td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;Preço</td>
+      <td id="setarPreco">&nbsp;&nbsp;&nbsp;&nbsp; - </td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;ANO</td>
+      <td id="setarAno">&nbsp;&nbsp;&nbsp;&nbsp; - </td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;Modelo</td>
+      <td id="setarModelo">&nbsp;&nbsp;&nbsp;&nbsp; -</td>
+    </tr>
+    </table><br>
+               <button type="button" onclick=" location.href='cadastro.html'"  class="botao" >RESERVAR</button><br><br> 
+               </center>            
+            </div>
+         </div>
+         <div class="coluna col3 sidebar">
+            <div id="formatarQuadrado"><center><br>
+                 <img src="img/ka.png" id="fotoImportados" alt="">
+                   <h4> KA </h4>
+                  <div id="preco2">
+                    R$ 40.990,00
+                  </div><br>
+                   <table border="3">
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;CARAC&nbsp;&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;DETALHES&nbsp;&nbsp; </td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;Preço</td>
+      <td id="setarPreco">&nbsp;&nbsp;&nbsp;&nbsp; - </td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;ANO</td>
+      <td id="setarAno">&nbsp;&nbsp;&nbsp;&nbsp; - </td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;Modelo</td>
+      <td id="setarModelo">&nbsp;&nbsp;&nbsp;&nbsp; -</td>
+    </tr>
+    </table><br>
+               <button type="button" onclick=" location.href='cadastro.html'"  class="botao" >RESERVAR</button><br><br> 
+               </center>            
+            </div>
+         </div>
+         <div class="coluna col3 sidebar">
+            <div id="formatarQuadrado"><center><br>
+                 <img src="img/fiesta.png" id="fotoImportados" alt="">
+                   <h4> FIESTA </h4>
+                  <div id="preco2">
+                    R$ 49.990,00
+                  </div><br>
+                   <table border="3">
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;CARAC&nbsp;&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;DETALHES&nbsp;&nbsp; </td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;Preço</td>
+      <td id="setarPreco">&nbsp;&nbsp;&nbsp;&nbsp; - </td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;ANO</td>
+      <td id="setarAno">&nbsp;&nbsp;&nbsp;&nbsp; - </td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;Modelo</td>
+      <td id="setarModelo">&nbsp;&nbsp;&nbsp;&nbsp; -</td>
+    </tr>
+    </table><br>
+               <button type="button" onclick=" location.href='cadastro.html'"  class="botao" >RESERVAR</button><br><br> 
+               </center>            
+            </div>
+         </div>
+      </section>
+    </div><br><br><br>
+
+
+
+   <div class="linha" >
+      <div class="coluna col12" id="formatarQuadradoInteresse"><center><br>
+         <div class="letra" style="color: black;" id="piscar" > Não encontrou o que procurava?</div>
+            <p id="textoCatalogoInteresse">Preencha o seu e-mail e o modelo de seu interesse para te avisarmos sobre novas ofertas.</p>
+               <form method="POST" action="">
+                Email: <input type="email" id="inputTextToSave" maxlength="25"  name="email" placeholder="Insira seu email aqui" required/>
+                <select id="modelo" style="height:27px;">               
+                  <option id="modelo">Modelo</option>
+                  <option id="modelo">STRADA</option>
+                  <option id="modelo">AMAROCK</option>
+                  <option id="modelo">AUDI</option>
+                  <option id="modelo">GOL</option>
+                  <option id="modelo">JETTA</option>
+                  <option id="modelo">COROLLA</option>
+                  <option id="modelo">ECO SPORT</option>
+               </select>
+               <select id="cor" style="height:27px;">               
+                  <option id="cor">COR</option>
+                  <option id="cor">Azul</option>
+                  <option id="cor">Branco</option>
+                  <option id="cor">Cinza</option>
+                  <option id="cor">Prata</option>
+                  <option id="cor">Preta</option>
+                  <option id="cor">Vermelha</option>
+
+               </select>
+               <button class="botao" onclick="saveTextAsFile()" id="botaoEnteresse">ENVIAR</button><br><br><br>
+            </form>
+          </center>
+      </div>
+   </div><br><br>
+
+
+   <div class="conteudo-extra">
+   		<div class="linha">
+   			<div class="coluna col5">
+   				<section>
+   					<h2>Como um site pode ajudar sua empresa?</h2>
+   					<p>
+                <ul>
+                  <li> Garante Credibilidade</li>
+                  <li> Abre um Novo Horizonte de Divulgação</li>
+                  <li> Facilita a Implementação de Estratégias de Marketing Digital</li>
+                  <li> Permite Organizar os Serviços da Empresa</li>
+                  <li> Expõe Claramente Clientes já Atendidos</li>
+                  <li> Cria um Novo Canal de Comunicação</li>
+                  <li> Meio de estar conectado</li>
+                  </ul>
+            </p>
+   				</section>
+   			</div>
+   			<div class="coluna col7">
+   				<h2>Ultimas noticias: </h2>
+   				<ul class="sem-marcador sem-padding noticias">
+   					<li>
+   						<img src="img/ciencia.png" alt="">
+   						<h4>Verizon anuncia mais 20 cidades que irão receber rede 5G nos EUA</h4>
+   						<p>Operadora também anunciou a pré-venda dos smartphones Galaxy S10 5G, por US$ 1.300.... <a href="https://g1.globo.com/economia/tecnologia/noticia/2019/04/25/verizon-anuncia-mais-20-cidades-com-5g-nos-eua.ghtml"><br/>Leia mais  &raquo;</a></p>
+   					</li>
+   					<li>
+   						<img src="img/buy.jpg" alt="">
+   						<h4>74% dos internautas brasileiros usam celular para auxiliar compras</h4>
+   						<p>Pesquisa realizada pela SPC Brasil e CNDL, em todas as capitais, mostra que 74% dos internautas....   <a href="https://noticias.r7.com/tecnologia-e-ciencia/74-dos-internautas-brasileiros-usam-celular-para-auxiliar-compras-03072018"><br/>Leia mais &raquo;</a></p>
+   					</li>
+   				</ul>
+   			</div>
+   		</div>  	 
+   </div>
+   <div class="footer">
+   		<div class="linha">
+   			<footer>
+   				<div class="coluna col12">
+   					<span>&copy; 2019- Sistemas de Informação. ALL RIGHTS ARE RESERVED.</span>
+   				</div>
+   			</footer>
+   		</div>
+   </div>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>

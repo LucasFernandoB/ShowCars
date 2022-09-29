@@ -1,0 +1,23 @@
+.div {
+position: absolute;
+overflow:auto;
+float:auto;
+background-color: #abc;
+left: 1000px;
+width: 90px;
+height: 90px;
+margin: 5px;
+display:none;
+}
+@keyframes fa-blink {
+     0% { opacity: 1; }
+     50% { opacity: 0.5; }
+     100% { opacity: 0; }
+ }
+.fa-blink {
+   -webkit-animation: fa-blink .75s linear infinite;
+   -moz-animation: fa-blink .75s linear infinite;
+   -ms-animation: fa-blink .75s linear infinite;
+   -o-animation: fa-blink .75s linear infinite;
+   animation: fa-blink .75s linear infinite;
+}

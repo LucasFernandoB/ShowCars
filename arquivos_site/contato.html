@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<title>SHOWCARS</title>
+	<link rel="stylesheet" href="css/normalize.css"/>
+	<link href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="css/estilo.css"/>
+   <script type="text/javascript" src="java/script.js"></script>
+</head>
+<body bgcolor="#151515">
+	<div class="header">
+	   <div class="linha">
+		   	<header>
+		   		<div class="coluna col4">
+                   <img src="img/logo.png" alt="">
+               </div>
+		   		<div class="coluna col8">
+		   			<nav>
+		   				<ul class="menu inline sem-marcador">
+		   					<li><a href="index1.html">HOME</a></li>
+                        <li><a href="cadastro.html">CADASTRO</a></li>
+                        <li><a href="servicos.html">SERVIÇOS</a></li>
+                        <li><a href="contato.html">CONTATO</a></li>
+                       <a href="carrinhoCompras.html"><img id="foto" src="img/comp.png" alt=""></a>
+		   				</ul>
+		   			</nav>
+		   		</div>
+		   	</header>  	
+	   </div>
+   </div>
+   <div class="linha">
+      <ul class="sem-marcador sem-padding"/>
+   	<section>
+   		<div class="coluna col5 sidebar" id="teste"><center>
+   			<h2>Localização </h2>
+            <img src="img/maps.jpg" alt="" />
+   			<ul class="sem-padding sem-marcador" >
+               <h3>Endereço</h3>
+               <li>km 1 </li>
+               <li>LMG-746</li>
+               <li>Monte Carmelo - MG</li><br>              	
+   			</ul>
+            <h3>Contato direto</h3>
+            <ul class="sem-padding sem-marcador">
+               <li>Fone: <strong>(34) 3810-1010</strong></li>
+               <li>Email: <strong>showcars@gmail.com</strong></li>
+            </ul></center>
+   		</div>
+   		<div class="coluna col7 contato" id="teste">
+   			<h2>Sugestões ou duvidas, envie seu comentario!</h2>
+            <form method="POST" action="contato.html" id="formataformulario">
+               <label for="nome" >Seu nome: </label>
+               <input type="text"  id="nome" name="nome" placeholder="Insira seu nome aqui" class="formataformulario" /> 
+               <label for="email">Seu email: </label> 
+               <input type="email"  id="email" id="formataformulario" class="formataformulario" maxlength="15"  name="email" placeholder="Insira seu email aqui" required/>
+               <label for="email">Assunto: </label> 
+               <input type="text"  id="assunto" name="assunto" class="formataformulario" placeholder="Insira o assunto aqui"  required/><br><br>
+               <label for="mensagem">Mensagem: </label> 
+               <textarea name="mensagem" required id="mensagem" class="formataformulario"></textarea>
+               <input type="submit" class="botao" name="enviar" onclick="saveTextAsFileContato()"  value="ENVIAR" style="width: 540px; background: #00FFFF; color: black"/>
+            </form>   			
+   		</div>
+   	</section>
+   </ul>
+   </div><br><br><br><br><br>
+   <div class="linha"><center>
+    <section> 
+        <div class="coluna col2" id="redesSociais">
+             <a href="www.google.com"><img src="img/logoInsta.png" alt=""></a>
+         </div>
+         <div class="coluna col2">
+             <a href="www.google.com"><img src="img/logoFace.png" alt=""id="redesSociais"></a>
+         </div>
+         <div class="coluna col2">
+            <a href="www.google.com"> <img src="img/youtube.png" alt="" id="redesSociais"></a>
+         </div>
+         <div class="coluna col2">
+            <a href="www.google.com"> <img src="img/email.png" alt="" id="redesSociais"></a>
+         </div>
+         <div class="coluna col2">
+            <a href="www.google.com"> <img src="img/twitter.png" alt="" id="redesSociais"></a>
+         </div>
+         <div class="coluna col2">
+            <a href="www.google.com"> <img src="img/whatsapp.png" alt="" id="redesSociais"></a>
+         </div>
+         
+    </section>
+  </div></center><br><br><br><br>
+   <div class="conteudo-extra">
+   		<div class="linha">
+   			<div class="coluna col4">
+               <section>
+                  Anuncie conosco : (34)3842-2465
+               </section>
+            </div>
+            <div class="coluna col4">
+               <section>
+                  CNPJ: 22.334.579/0001-61
+               </section>
+            </div>
+            <div class="coluna col4">
+               <section>
+                  Ultima atualização:  25/04/2019
+               </section>
+            </div>
+   		</div>  	 
+   </div>
+   <div class="footer">
+   		<div class="linha">
+   			<footer>
+   				<div class="coluna col12">
+   					<span>&copy; 2019- Sistemas de informacao</span>
+   				</div>
+   			</footer>   			
+   		</div>
+   </div>
+</body>
+</html>

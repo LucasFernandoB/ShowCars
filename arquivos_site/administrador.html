@@ -1,0 +1,55 @@
+
+<HTML>
+  <HEAD>
+    <SCRIPT TYPE='text/javascript' SRC='java/arquivojs.js'></SCRIPT>
+    <link rel="stylesheet" href="css/estilo.css"/>
+  </HEAD>
+  <BODY>
+    <div class="header">
+     <div class="linha">
+        <header >
+          <div class="coluna col4">
+            <a href="index1.html"> <img src="img/logo.png" alt=""></a>
+          </div>
+          <div class="coluna col8">
+            <nav>
+              <ul class="menu inline sem-marcador">
+                <li><a href="teste1.html">RELATORIOS</a></li>   
+                <li><a href="">RENDIMENTO</a></li>
+                <li><a href="">SETAR PRODUTOS</a></li>   
+              </ul>
+            </nav>
+          </div>
+        </header>   
+     </div>
+   </div><br><br>
+    <center>
+      <B>Escolha um arquivo de texto para carregar:</B> <INPUT TYPE="file" ID="fileToLoad"><br><br>
+    <BUTTON ONCLICK="loadFileAsText()">Carregar o arquivo selecionado</BUTTON>
+    <BUTTON ONCLICK="contagem()">Contagem de informações</BUTTON>
+    <BUTTON ONCLICK="limpar()">Limpar Informações</BUTTON><br><br>
+    <TABLE ID="lista" BORDER="1">
+      <TR>
+  <TD>INFORMACAO  1</TD>
+  <TD>INFORMACAO  2</TD>
+  <TD>INFORMACAO  3</TD>
+  <TD>INFORMACAO  4</TD>
+  <TD>INFORMACAO  5</TD>
+      </TR>
+    </TABLE>
+
+    <P>
+    <textarea id="inputTextToSave" cols="80" rows="25"></textarea>
+    <P>
+    
+    Nome do arquivo para salvar como:
+    <input id="inputFileNameToSaveAs"></input>
+    <button onclick="saveTextAsFile()">Salvar texto para arquivo</button><br>
+    Selecione um arquivo para carregar:
+    <input type="file" id="fileToLoad2">
+    <button onclick="loadFileAsText2()">
+Carregar o arquivo selecionado</button>
+    </center>
+        
+  </BODY>
+</HTML>

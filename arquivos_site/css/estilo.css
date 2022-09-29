@@ -1,0 +1,479 @@
+body{
+	font-family: "Roboto",sans-serif;
+	color:#333;
+	
+}
+a:link, a:active, a:visited{
+	color: #315e8a;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+/* grid 960px*/
+.linha{
+	width: 960px;
+	margin:0 auto;
+	overflow: auto;
+	padding: 5px 0;
+}
+.coluna{
+	padding: 0 10px;
+	float: left;
+}
+.col1{
+	width: 60px;
+}
+.col2{
+	width: 140px;
+}
+.col3{
+	width: 220px;
+}
+.col4{
+	width: 300px;
+}
+.col5{
+	width: 380px;
+}
+.col6{
+	width: 460px;
+}
+.col7{
+	width: 540px;
+}
+.col8{
+	width: 620px;
+}
+.col9{
+	width: 700px;
+}
+.col10{
+	width: 780px;
+}
+.col11{
+	width: 860px;
+}
+.col12{
+	width: 940px;
+}
+/*estilos reutilizaveis*/
+.sem-padding{
+	padding: 0 !important;
+}
+.sem-margin{
+	margin: 0 !important;
+}
+h1, h2, h3, h4, h5 , h6{
+	font-weight: 500;
+	margin: 15px 0 10px 0;
+}
+.letra
+{
+	color: white;
+	font-size: 30px;
+
+}
+#h4letra
+{
+	font-size: 20px;
+	color: black;
+	font-family: Arbutus Slab;
+
+}
+ul li, ol li{
+	margin-bottom:  5px;
+}
+ul.inline li, ol.inline li{
+	display: inline;
+	margin-right: 5px;
+
+}
+ul.inline li:last-child, ol.inline li.last-child{  /*o ultimo da home nao tem espaco*/
+	margin-right: 0;
+}
+ul.sem-marcador,ol.sem-marcador{  /* pra nao aparecer as bolinhas*/
+	list-style: none;
+
+}
+a.botao, input.botao{
+	background: #1f3c58;
+	padding: 5px 10px;
+	border-radius: 3px;
+	color: #ebebeb;
+	cursor:pointer;
+	margin: 5px 0;
+	display: inline-block;
+	border: none;
+}
+a.botao:hover, input.botao:hover{
+	background: #315e8a;
+	text-decoration: none;
+}
+/*layout do site*/
+img{
+	max-width: 100%;
+	height: auto;
+}
+.header{
+	background: #dee3e6;
+    border-radius: 7px;
+}
+h1.logo{
+	font-weight: 300;
+	color: black;
+	letter-spacing: -2px;
+}
+.conteudo-extra{
+	background: #f1f2ea;
+}
+.footer{
+	background: #1f3c58;
+	color: #ebebeb;
+	padding: 20px 0;
+	text-align: center;
+	font: 100;
+}
+.menu{
+	/*text-transform: uppercase; pra poder caber todos da home*/
+	text-align: right;
+	margin-top: 25px; 
+}
+.menu li a{
+	padding: 5px 10px;
+	border-radius:  3px;
+}
+.menu li a:hover{
+	text-decoration: none;
+	background: #1f3c58;
+	color: #ebebeb;
+}
+ul.noticias li{
+	clear: both;
+	display: block;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+ul.noticias li img{
+	width: 70px;
+	height: auto;
+	margin-right: 10px;
+	float: left;
+}
+ul.noticias li h4{
+	margin: -2px 0 5px 0;
+	font-weight: 500;
+}
+ul.noticias li p{
+	margin: 5px 0;
+	font-weight: 300;
+}
+ul.noticias li p a{
+	font-weight: 500;
+}
+.contato label{
+	display: block;
+	font-weight: 300;
+	font-size: 13px;
+}
+.contato input, .contato textarea{
+	display: block;
+	margin-bottom: 15px;
+	padding:  5px 2%;
+	width:  96%;
+
+}
+.contato textarea{
+	height: 150px;
+}
+.contato input.botao{
+	width: auto;
+}
+
+
+.btn-wrap{
+    position:relative;
+    text-align:center;
+}
+.btn-wrap button{
+    position:absolute;
+    z-index:1;
+    top:50%;
+    left:50%;
+    width:60px;               /* largura para o botão */
+    height:30px;              /* altura para o botão */
+    padding:0;
+    margin:-15px 0 0 -30px;   /* margem à esquerda e ao topo metade da medida do botão */
+    border:0 none;
+}
+.invalid {
+  border: 2px solid #ff0000;
+}
+.tambutton {
+	height: 18px;
+	width:	224px;
+}
+
+.tabela{
+	margin-left: 150px;
+	background: white;
+	width:85%;
+}
+.article{
+ 	display: inline;
+ 	width: 60%;
+ 	float: left;
+}
+.nav-item a:active,a:focus{
+  	color: #188ae2;
+}
+  	
+#preco1
+{
+	font-size: 20px;
+}
+#preco2
+{
+	font-size: 25px;
+	color: blue;	
+}
+
+#formatarQuadrado
+{
+	width: 210px;
+	background:#DCDCDC;
+	overflow:auto;
+  
+/* Border style */
+	border: 2px solid #696969;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+}
+#formatarQuadradoInteresse
+{
+	width: 930px;
+	background:#FFFF00;
+	overflow:auto;
+  
+/* Border style */
+	border: 2px solid #696969;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+}
+#formataQuadradoCarrinho
+{
+	width: 930px;
+	background: white;
+	overflow:auto;
+  
+/* Border style */
+	border: 2px solid #696969;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+
+}
+
+#contactform {/* estilizacao pro login */
+    width: 300px;
+    padding: 10px;
+    background: #f0f0f0;
+    overflow:auto;
+  
+    /* Border style */
+    border: 1px solid #cccccc;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px; 
+  
+    /* Border Shadow */
+    -moz-box-shadow: 2px 2px 2px #cccccc;
+    -webkit-box-shadow: 2px 2px 2px #cccccc;
+    box-shadow: 2px 2px 2px #cccccc;
+}
+#foto {/* pro icone do cariinho de compra*/
+    max-width:60px;
+    max-height:60px;
+    width: auto;
+    height: auto;  
+}
+.fotoInterrogacao
+{
+	max-width:150px;
+    max-height:150px;
+    width: auto;
+    height: auto; 
+
+}
+#redesSociais {/* pro icone do cariinho de compra*/
+    max-width:100px;
+    max-height:100px;
+    width: auto;
+    height: auto;  
+}
+#textoCarrinhovazio
+{
+	font-size: 23px;
+}
+#textoServicos
+{
+	text-align: justify;
+}
+#tituloCatalogo
+{
+	text-align: center; font-size: 23px; color: #FF4500
+}
+#textoCatalogo
+{
+	text-align: center;
+	color: black;
+	font-size: 20px;
+
+}
+#textoCadastro
+{
+	color: white;
+	font-size: 24px;
+	
+}
+#fotoLoguin {/* pro formulario ficar em cima da formatacoa da imagem*/
+    width:1000px;
+    height:330px;
+  
+}
+#fotoCarros
+{
+	width:150px;
+    height:120px;
+
+}
+#fotoImportados
+{
+	width:200px;
+    height:100px;
+}
+#logoMarca
+{
+    max-width:100px;
+    max-height:100px;
+    width: auto;
+    height: auto; 	
+}
+#logo
+{
+	max-width:500px;
+    max-height:500px;
+    width: auto;
+    height: auto; 
+}
+
+.formataformulario
+{
+	border-radius: 7px;
+
+}
+#textoLoguin
+{
+	color: black;
+}
+#textoCatalogoInteresse
+{
+	color: black;
+	font-size: 20px;
+}
+fieldset
+{
+	color: white;
+	background-color:#2E2E2E;
+	border: 1px solid #cccccc;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px; 	
+}
+#teste
+{
+	color: #C0C0C0;
+}
+
+#carroNaoEncontrado
+{
+	background: yellow;
+}
+
+#posicionamento
+{
+	width: 600px;
+	height: 550px;
+	margin: -287px  -250px;
+	position:relative;
+	top: 66%;
+	left: 60%;
+	padding: 10px;
+	overflow:hidden;
+}
+
+
+#galeria img:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+#botaoEnteresse
+{
+	height:27px;-webkit-border-radius: 7px;border-radius: 7px;
+}
+
+button
+{
+	background: #1f3c58;
+	padding: 5px 10px;
+	border-radius: 3px;
+	color: #ebebeb;
+	cursor:pointer;
+	margin: 5px 0;
+	display: inline-block;
+	border: none;
+	align-content: center;
+
+}
+
+#galeria img:hover {/*opcao de sobresaltar uma imagem tornado maior ao passar o mouse por cima*/
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/*fazer o preco piscar*/
+@keyframes fa-blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 0; }
+ }
+.fa-blink {
+   -webkit-animation: fa-blink .75s linear infinite;
+   -moz-animation: fa-blink .75s linear infinite;
+   -ms-animation: fa-blink .75s linear infinite;
+   -o-animation: fa-blink .75s linear infinite;
+   animation: fa-blink .75s linear infinite;
+}
+div.dcontexto span{display: none}
+  div.dcontexto:hover span{ 
+  display:block;
+  position:absolute;
+  top:50em;
+  text-align:justify;
+ }
+ div.dcontexto1 span{display: none}
+  div.dcontexto1:hover span{ 
+  display:block;
+  position:absolute;
+  top:130em;
+  text-align:justify;
+ }
+
+
+
+
+

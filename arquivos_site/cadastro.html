@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Projeto da UFU</title>
+	<link rel="stylesheet" href="css/normalize.css"/>
+	<link href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="css/estilo.css"/>
+  <script type="text/javascript" src="java/script.js"></script>
+</head>
+<body bgcolor="#151515">
+	<div class="header">
+	   <div class="linha">
+		   	<header>
+		   		<div class="coluna col4">
+              <img src="img/logo.png" alt="">
+          </div>
+		   		<div class="coluna col8">
+		   			<nav>
+              <ul class="menu inline sem-marcador">
+                <li><a href="principal.html">HOME</a></li>
+                <li><a href="cadastro.html">CADASTRO</a></li>
+                <li><a href="servicos.html">SERVIÇOS</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+                <a href="carrinhoCompras.html"><img id="foto" src="img/comp.png" alt=""></a>
+                              
+              </ul>
+            </nav>
+		   		</div>
+		   	</header>  	
+	   </div>
+  </div>
+
+  <div class="linha">
+     <ul class="sem-marcador sem-padding"/> 
+     <section>
+      <center><div id="textoCadastro">CADASTRE PARA RESERVAR SEU CARRO E PARA RECEBER NOVIDADES.</div></center><br><br>
+         <div class="coluna col12 sidebar">
+            <img id="fotoLoguin" src="img/velo.jpg" alt="">
+            <div id="posicionamento">             
+            <form method="POST" action="carrinhoCompras.html" id="contactform">
+              <center>
+                <h2></h2>
+                <label id="textoLoguin">Nome:&nbsp;</label><input type="text" id="nome" style="width: 200px;" name="login" required=""><br><br>
+                <label id="textoLoguin"> Email:</label>&nbsp;&nbsp; <input type="email" id="email" maxlength="25" style="width: 200px;" name="email"  required/><br><br>
+               <label id="textoLoguin"> CPF:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="cpf" maxlength="14" style="width: 200px;"  id="tamanho" id="part" name="cpf" required pattern="[0-9]{3}[.]{1}[0-9]{3}[.]{1}[0-9]{3}[-]{1}[0-9]{2}" title="Cpf invalido" placeholder="Ex.: 000.000.000-00" OnKeyPress="formatar('###.###.###-##', this)"/><br><br>
+                <label id="textoLoguin">Fone:</label>&nbsp;&nbsp;&nbsp; <input type="text" id="telefone" maxlength="13" style="width: 200px;" id="part" name="telefone" placeholder="(xx)xxxxx-xxxx"  required pattern="[0-9]{2}[-]{1}[0-9]{5}[-]{1}[0-9]{4}"
+                title="Numero de telefone invalido"OnKeyPress="formatar('##-#####-####', this)" /><br><br>
+                <input type="submit" value="CADASTRAR" onclick="saveTextAsFileCadastro()" class="botao" name="entrar" id="teste1">
+                <input type="reset" value="LIMPAR"  class="botao" name="limpar" />
+                <button type="button" onclick=" location.href='dadosCadastrados.html'"  class="botao" >CONSULTAR</button><br>
+              </center>
+            </form>
+            </div>
+         </div>
+      </section>
+    </ul>
+  </div><br><br>
+
+
+  <div class="linha">
+    <div class="fa-blink">
+      <div class="letra"> CONHEÇA NOSSAS PARCEIRIAS: </div><br><br>
+    </div>
+    <section> 
+        <div class="coluna col2 sidebar">
+         <img id="logoMarca" src="https://www.webmotors.com.br/catalogo/assets/v5/img/logos/mercedesbenz.png?v=201948-66" alt="Mercedes-Benz" data-reactid="126">
+         <a href="https://ofertas.mercedes-benz.com.br/gla/home/?gclid=CjwKCAjwlPTmBRBoEiwAHqpvhRahrnyoekar9c4DO9aR2K9elBONpjRNlsa47rFoeSST_aZYe6C-2xoCVg4QAvD_BwE">&nbsp;&nbsp;&nbsp;MERCEDEZ</a>
+        </div>
+        <div class="coluna col2">
+          <img id="logoMarca" src="https://www.webmotors.com.br/catalogo/assets/v5/img/logos/mitsubishi.png?v=201948-66" alt="Mitsubishi" data-reactid="130">
+          <a href="https://www.mitsubishimotors.com.br/?SID=0568735e-1742-11e8-b2e3-06f7b71ab966&gclid=CjwKCAjwlPTmBRBoEiwAHqpvhY8O5kwMMJsGtDNAule_kQazgg5fR4St7MziBMaiLT0TNGsm_UhRlhoCqJsQAvD_BwE">&nbsp;&nbsp;&nbsp;MITSUBISHI</a>
+        </div>
+        <div class="coluna col2">
+          <img id="logoMarca" src="https://www.webmotors.com.br/catalogo/assets/v5/img/logos/peugeot.png?v=201948-66" alt="Peugeot" data-reactid="134">
+          <a href="https://www.peugeot.com.br/ofertas/?regiao=false">&nbsp;&nbsp;&nbsp;PEUGEOT</a>
+        </div>
+        <div class="coluna col2 sidebar">
+          <img id="logoMarca" src="https://www.webmotors.com.br/catalogo/assets/v5/img/logos/volkswagen.png?v=201948-66" alt="Volkswagen" data-reactid="146">
+          <a href="">WOLKSVAGEM</a>
+        </div>
+        <div class="coluna col2 sidebar">
+          <img id="logoMarca" src="https://www.webmotors.com.br/catalogo/assets/v5/img/logos/renault.png?v=201948-66" alt="Renault"data-reactid="138">
+          <a href="https://www.renault.com.br/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RENAULT</a>
+        </div>
+        <div class="coluna col2 sidebar">
+          <img id="logoMarca" src="https://www.webmotors.com.br/catalogo/assets/v5/img/logos/toyota.png?v=201948-66" alt="Toyota" data-reactid="142">
+          <a href="https://www.toyota.com.br/?gclid=CjwKCAjwlPTmBRBoEiwAHqpvhcr8sHFfjG5P4rwg9rk8JOqoo-2arsMALt2dSoKdiwyYKH3S86egxhoCmM0QAvD_BwE">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOYOTA</a>
+        </div>
+    </section>
+  </div><br><br><br><br>
+  
+
+  <div class="conteudo-extra">
+      <div class="linha">
+        <div class="coluna col4">
+               <section>
+                  Anuncie conosco : (34)3842-2465
+               </section>
+            </div>
+            <div class="coluna col4">
+               <section>
+                  CNPJ: 22.334.579/0001-61
+               </section>
+            </div>
+            <div class="coluna col4">
+               <section>
+                  Ultima atualização:  25/04/2019
+               </section>
+            </div>
+      </div>     
+   </div> 
+   <div class="footer">
+   		<div class="linha">
+   			<footer>
+   				<div class="coluna col12">
+   					<span>&copy; 2019- Sistemas de informacao</span>
+   				</div>
+   			</footer>
+   			
+   		</div>
+   </div>
+
+</body>
+</html>
+
