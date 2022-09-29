@@ -12,7 +12,6 @@ Para visualizá-lo, basta baixar a pasta compactada, e abrir no navegador de sua
 As imagens do sistema gerado estão logo abaixo:
 
 Tela principal do site:
-![siteInicial](https://user-images.githubusercontent.com/82735616/193150731-2ebbefe7-3058-4f6f-8fee-4d0dff1c2dbf.png)
 ![siteInicial](https://user-images.githubusercontent.com/82735616/193152384-c9fbca77-ada4-4313-b491-5d950f89a73a.png)
 ![siteInicial2](https://user-images.githubusercontent.com/82735616/193152389-31025fcf-9a3c-4e53-bd57-f34652c4b74b.png)
 
