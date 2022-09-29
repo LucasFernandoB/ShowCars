@@ -9,5 +9,10 @@
 
 Para visualizá-lo, basta baixar a pasta compactada, e abrir no navegador de sua prefência, pois não possui back-end.
 
+As imagens do sistema gerado estão logo abaixo:
+
+Tela principal do site:
 ![siteInicial](https://user-images.githubusercontent.com/82735616/193150731-2ebbefe7-3058-4f6f-8fee-4d0dff1c2dbf.png)
+
+
 
